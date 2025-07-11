@@ -150,6 +150,22 @@ nav a:hover {
   background-color: #000;
   margin-top: 2rem;
 }
+/* Hover animation for cards */
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Smooth transition for card-inner as well */
+.card-inner {
+  transition: transform 0.8s ease, box-shadow 0.3s ease;
+}
+
+/* Add subtle glow on hover */
+.card:hover .card-front,
+.card:hover .card-back {
+  box-shadow: 0 0 20px rgba(229, 9, 20, 0.5);
+}
 
 /* 🔍 Responsive for Mobile */
 @media screen and (max-width: 768px) {
