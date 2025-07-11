@@ -76,6 +76,13 @@ body {
   height: 380px;
   perspective: 1000px;
   cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(229, 9, 20, 0.6);
+  z-index: 10;
 }
 
 .card-inner {
@@ -108,6 +115,11 @@ body {
   width: 100%;
   height: 180px;
   object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .card-front img {
+  opacity: 0.9;
 }
 
 .card-body {
