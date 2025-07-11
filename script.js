@@ -20,7 +20,7 @@ filterButtons.forEach((btn) => {
     cards.forEach((card) => {
       const cardTags = card.getAttribute("data-tags");
       if (tag === "all" || cardTags.toLowerCase().includes(tag.toLowerCase())) {
-        card.style.display = "block";
+        card.style.display = "flex"; // ✅ updated from "block"
       } else {
         card.style.display = "none";
       }
