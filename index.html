@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vijay Pujar – Legal Research</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="favicon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vijay Pujar | Legal Academic Research</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".card").forEach(card => {
+        card.addEventListener("click", () => card.classList.toggle("flipped"));
+      });
+    });
+  </script>
 </head>
-
 <body>
   <div class="header">
     <h1>Vijay Pujar</h1>
@@ -16,120 +20,109 @@
     <p><em>"Never waste a good crisis"</em></p>
     <div class="buttons">
       <a href="https://drive.google.com/file/d/1TDJbEz1QCk3oJOztCTQSQneU9UBg32Aa/view?usp=drive_link" target="_blank">📄 Resume</a>
-      <a href="mailto:vijay.pujar@nls.ac.in">✉️ Contact</a>
+      <a href="mailto:vijay.pujar@nls.ac.in">📧 Contact</a>
     </div>
   </div>
 
-  <div class="section-title">My Research</div>
-
-  <div class="research-section">
-    <!-- Card 1 -->
+  <div class="container">
+    <!-- Digital Bailment -->
     <div class="card">
       <div class="card-inner">
         <div class="card-front">
-          <img src="assets/for digital bailment.jpg" alt="Digital Bailment">
+          <img src="assets/digital_bailment.jpg" alt="Digital Bailment" />
           <div class="card-body">
             <h3>Digital Bailment</h3>
             <p>Extending bailment doctrines to digital data.</p>
           </div>
         </div>
         <div class="card-back">
-          <h4>Tags:</h4>
-          <p>Contracts, Tech law, Privacy, Data breach</p>
-          <p><strong>Citation:</strong> OSCOLA</p>
-          <a href="https://drive.google.com/file/d/1Pw2RMLQF4RbAY33ee8m5sYKfUfaNNnvo/view?usp=drive_link" target="_blank">🔗 Read PDF</a>
+          <h4>Digital Bailment</h4>
+          <p>This paper explores extending traditional bailment doctrines to digital assets like electronic data. It draws on US rulings and the Indian Puttaswamy case on privacy.</p>
+          <p><strong>Tags:</strong> Contracts, Tech law, Privacy, Data breach</p>
+          <a href="https://drive.google.com/file/d/1Pw2RMLQF4RbAY33ee8m5sYKfUfaNNnvo/view?usp=drive_link" target="_blank">Read PDF</a>
         </div>
       </div>
     </div>
 
-    <!-- Card 2 -->
+    <!-- Related Party Transactions -->
     <div class="card">
       <div class="card-inner">
         <div class="card-front">
-          <img src="assets/for rpt.jpg" alt="Related Party Transactions">
+          <img src="assets/rpt.jpg" alt="Related Party Transactions" />
           <div class="card-body">
             <h3>Related Party Transactions</h3>
-            <p>Audit Committees and arm's length application in Indian corporate law.</p>
+            <p>Audit committees & arm’s length in corporate law.</p>
           </div>
         </div>
         <div class="card-back">
-          <h4>Tags:</h4>
-          <p>Corporate law, Audit risk, Related Party Transactions</p>
-          <p><strong>Citation:</strong> Bluebook</p>
-          <a href="https://drive.google.com/file/d/1E2AGDY2g1gR3wu_4VjRukga9-QpIkjMM/view?usp=drive_link" target="_blank">🔗 Read PDF</a>
+          <h4>Related Party Transactions</h4>
+          <p>Evaluates regulatory challenges in RPTs in India with a focus on audit committees and arm's length standards. Suggests governance reforms.</p>
+          <p><strong>Tags:</strong> Corporate law, audit risk, arm's length</p>
+          <a href="https://drive.google.com/file/d/1E2AGDY2g1gR3wu_4VjRukga9-QpIkjMM/view?usp=drive_link" target="_blank">Read PDF</a>
         </div>
       </div>
     </div>
 
-    <!-- Card 3 -->
+    <!-- Women Litigants -->
     <div class="card">
       <div class="card-inner">
         <div class="card-front">
-          <img src="assets/empriical.jpg" alt="Women Litigants">
+          <img src="assets/women_litigants.jpg" alt="Women Litigants" />
           <div class="card-body">
             <h3>Women Litigants in Karnataka</h3>
-            <p>Empirical study linking literacy, legal aid and access to justice.</p>
+            <p>Legal aid, literacy & civil-criminal case data analysis.</p>
           </div>
         </div>
         <div class="card-back">
-          <h4>Tags:</h4>
-          <p>Empirical data, legal aid, gender justice</p>
-          <p><strong>Citation:</strong> OSCOLA</p>
-          <a href="https://docs.google.com/document/d/1bjQiY9WqzT_3y7BZUnH84HV80S2QZFif/edit?usp=drive_link" target="_blank">🔗 Read PDF</a>
+          <h4>Educated and Empowered to Litigate?</h4>
+          <p>This empirical study analyses how literacy and legal aid affect women’s access to justice in Karnataka’s civil and criminal courts.</p>
+          <p><strong>Tags:</strong> Empirical law, legal aid, gender justice</p>
+          <a href="https://docs.google.com/document/d/1bjQiY9WqzT_3y7BZUnH84HV80S2QZFif/edit?usp=drive_link" target="_blank">Read PDF</a>
         </div>
       </div>
     </div>
 
-    <!-- Card 4 -->
+    <!-- Inter-country Adoption -->
     <div class="card">
       <div class="card-inner">
         <div class="card-front">
-          <img src="assets/adoption.jpg" alt="Inter-country Adoption">
+          <img src="assets/adoption.jpg" alt="Adoption" />
           <div class="card-body">
-            <h3>Inter-Country Adoption</h3>
-            <p>Challenges for Indian citizens adopting from non-Hague countries.</p>
+            <h3>Inter-country Adoption</h3>
+            <p>Challenges faced by Indians adopting from non-Hague nations.</p>
           </div>
         </div>
         <div class="card-back">
-          <h4>Tags:</h4>
-          <p>Family law, Adoption, CARA, Hague Convention</p>
-          <p><strong>Citation:</strong> MLA</p>
-          <a href="https://drive.google.com/file/d/1kERU55cYtbM9QX59T8dGK0vVEdat3Jps/view?usp=drive_link" target="_blank">🔗 Read PDF</a>
+          <h4>Adoption from Non-Hague Nations</h4>
+          <p>This paper reviews Indian judicial trends on international adoption, procedural gaps, and risks of exploitation, with global comparisons.</p>
+          <p><strong>Tags:</strong> Family law, CARA, Hague Convention</p>
+          <a href="https://drive.google.com/file/d/1kERU55cYtbM9QX59T8dGK0vVEdat3Jps/view?usp=drive_link" target="_blank">Read PDF</a>
         </div>
       </div>
     </div>
 
-    <!-- Card 5 -->
+    <!-- Sixth Schedule -->
     <div class="card">
       <div class="card-inner">
         <div class="card-front">
-          <img src="assets/sixth schedule.jpg" alt="Sixth Schedule">
+          <img src="assets/sixth_schedule.jpg" alt="Sixth Schedule" />
           <div class="card-body">
-            <h3>Sixth Schedule & Manipur</h3>
-            <p>Extending constitutional protections to hill regions of Manipur.</p>
+            <h3>Sixth Schedule Extension</h3>
+            <p>Autonomy demands in Manipur’s hill districts.</p>
           </div>
         </div>
         <div class="card-back">
-          <h4>Tags:</h4>
-          <p>Federalism, Northeast India, Decentralisation</p>
-          <p><strong>Citation:</strong> OSCOLA</p>
-          <a href="https://drive.google.com/file/d/15sJHHf_FkG7idghSGYz98Q55Zn9epRS9/view?usp=drive_link" target="_blank">🔗 Read PDF</a>
+          <h4>Sixth Schedule in Manipur</h4>
+          <p>Explores governance gaps and identity politics in Manipur’s hill regions. Advocates extending Sixth Schedule for decentralised democracy.</p>
+          <p><strong>Tags:</strong> Constitutional law, federalism, tribal rights</p>
+          <a href="https://drive.google.com/file/d/15sJHHf_FkG7idghSGYz98Q55Zn9epRS9/view?usp=drive_link" target="_blank">Read PDF</a>
         </div>
       </div>
     </div>
   </div>
 
   <div class="footer">
-    &copy; 2025 Vijay Pujar | Built with ❤️ using GitHub Pages
+    © 2025 Vijay Pujar. All Rights Reserved.
   </div>
-
-  <script>
-    document.querySelectorAll('.card').forEach(card => {
-      card.addEventListener('click', () => {
-        card.classList.toggle('flipped');
-      });
-    });
-  </script>
 </body>
-
 </html>
