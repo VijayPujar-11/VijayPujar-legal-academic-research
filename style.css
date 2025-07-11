@@ -19,9 +19,8 @@ body {
 }
 
 .header p {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   color: #bbb;
-  margin: 0.2rem 0;
 }
 
 .buttons a {
@@ -43,29 +42,25 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 1.5rem auto;
   gap: 0.5rem;
+  padding: 1rem;
+  background-color: #1f1f1f;
 }
 
 .filter-btn {
-  background-color: #e50914;
+  padding: 0.5rem 1rem;
+  background-color: #333;
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
-  font-size: 0.95rem;
+  border-radius: 20px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
-.filter-btn:hover {
-  background-color: #b00610;
-}
-
+.filter-btn:hover,
 .filter-btn.active {
-  background-color: #1db954;
-  color: black;
+  background-color: #e50914;
 }
 
 .container {
@@ -78,7 +73,7 @@ body {
 
 .card {
   width: 280px;
-  height: 400px;
+  height: 380px;
   perspective: 1000px;
   cursor: pointer;
 }
@@ -105,6 +100,8 @@ body {
   overflow: hidden;
   background-color: #1e1e1e;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
 }
 
 .card-front img {
@@ -115,17 +112,22 @@ body {
 
 .card-body {
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .card-body h3 {
   color: #e50914;
-  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 .card-body p {
   font-size: 0.95rem;
   color: #ccc;
   line-height: 1.4;
+  flex-grow: 1;
 }
 
 .card-body a {
@@ -161,15 +163,28 @@ body {
   margin-top: 2rem;
 }
 
-/* Mobile Optimization */
+/* Mobile Optimizations */
 @media (max-width: 600px) {
   .card {
     width: 90%;
-    height: 420px;
+    height: auto;
+  }
+
+  .card-front img {
+    height: 160px;
   }
 
   .header h1 {
     font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .buttons a {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
   }
 
   .filter-btn {
