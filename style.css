@@ -1,3 +1,4 @@
+/* Base Styles */
 body {
   margin: 0;
   padding: 0;
@@ -13,14 +14,15 @@ body {
 }
 
 .header h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #e50914;
   margin-bottom: 0.5rem;
 }
 
 .header p {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   color: #bbb;
+  margin: 0.3rem;
 }
 
 .buttons a {
@@ -38,6 +40,24 @@ body {
   background-color: #b00610;
 }
 
+nav {
+  background-color: #1f1f1f;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+nav a {
+  color: #ddd;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* Card Container */
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -46,6 +66,7 @@ body {
   gap: 2rem;
 }
 
+/* Card Styles */
 .card {
   width: 280px;
   height: 380px;
@@ -85,7 +106,6 @@ body {
 
 .card-body {
   padding: 1rem;
-  text-align: justify;
 }
 
 .card-body h3 {
@@ -114,7 +134,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: justify;
   color: #ccc;
 }
 
@@ -130,4 +149,38 @@ body {
   color: #aaa;
   background-color: #000;
   margin-top: 2rem;
+}
+
+/* 🔍 Responsive for Mobile */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .card-front img {
+    height: 160px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .card-body p {
+    font-size: 0.9rem;
+  }
+
+  .card-back {
+    font-size: 0.9rem;
+  }
 }
