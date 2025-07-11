@@ -1,177 +1,128 @@
-/* Base */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #141414;
-  color: white;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vijay Pujar | Legal Academic Research</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".card").forEach(card => {
+        card.addEventListener("click", () => card.classList.toggle("flipped"));
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="header">
+    <h1>Vijay Pujar</h1>
+    <p>Law Student, Engineer, and Educator</p>
+    <p><em>"Never waste a good crisis"</em></p>
+    <div class="buttons">
+      <a href="https://drive.google.com/file/d/1TDJbEz1QCk3oJOztCTQSQneU9UBg32Aa/view?usp=drive_link" target="_blank">📄 Resume</a>
+      <a href="mailto:vijay.pujar@nls.ac.in">📧 Contact</a>
+    </div>
+  </div>
 
-/* Header */
-.header {
-  text-align: center;
-  padding: 3rem 1rem 2rem;
-  background-color: #000;
-}
+  <div class="container">
+    <!-- Digital Bailment -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="assets/for digital bailment.jpg" alt="Digital Bailment">
+          <div class="card-body">
+            <h3>Digital Bailment</h3>
+            <p>Extending bailment doctrines to digital data.</p>
+          </div>
+        </div>
+        <div class="card-back">
+          <h4>Digital Bailment</h4>
+          <p>This paper explores extending traditional bailment doctrines to digital assets like electronic data. It draws on US rulings and the Indian Puttaswamy case on privacy.</p>
+          <p><strong>Tags:</strong> Contracts, Tech law, Privacy, Data breach</p>
+          <a href="https://drive.google.com/file/d/1Pw2RMLQF4RbAY33ee8m5sYKfUfaNNnvo/view?usp=drive_link" target="_blank">Read PDF</a>
+        </div>
+      </div>
+    </div>
 
-.header h1 {
-  font-size: 3rem;
-  color: #e50914;
-  margin-bottom: 0.5rem;
-}
+    <!-- Related Party Transactions -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="assets/for rpt.jpg" alt="Related Party Transactions">
+          <div class="card-body">
+            <h3>Related Party Transactions</h3>
+            <p>Audit committees & arm’s length in corporate law.</p>
+          </div>
+        </div>
+        <div class="card-back">
+          <h4>Related Party Transactions</h4>
+          <p>Evaluates regulatory challenges in RPTs in India with a focus on audit committees and arm's length standards. Suggests governance reforms.</p>
+          <p><strong>Tags:</strong> Corporate law, audit risk, arm's length</p>
+          <a href="https://drive.google.com/file/d/1E2AGDY2g1gR3wu_4VjRukga9-QpIkjMM/view?usp=drive_link" target="_blank">Read PDF</a>
+        </div>
+      </div>
+    </div>
 
-.header p {
-  font-size: 1.25rem;
-  color: #bbb;
-}
+    <!-- Women Litigants -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="assets/empriical.jpg" alt="Women Litigants">
+          <div class="card-body">
+            <h3>Women Litigants in Karnataka</h3>
+            <p>Legal aid, literacy & civil-criminal case data analysis.</p>
+          </div>
+        </div>
+        <div class="card-back">
+          <h4>Educated and Empowered to Litigate?</h4>
+          <p>This empirical study analyses how literacy and legal aid affect women’s access to justice in Karnataka’s civil and criminal courts.</p>
+          <p><strong>Tags:</strong> Empirical law, legal aid, gender justice</p>
+          <a href="https://docs.google.com/document/d/1bjQiY9WqzT_3y7BZUnH84HV80S2QZFif/edit?usp=drive_link" target="_blank">Read PDF</a>
+        </div>
+      </div>
+    </div>
 
-.buttons a {
-  display: inline-block;
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
-  color: white;
-  background-color: #e50914;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
+    <!-- Inter-country Adoption -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="assets/adoption.jpg" alt="Adoption">
+          <div class="card-body">
+            <h3>Inter-country Adoption</h3>
+            <p>Challenges faced by Indians adopting from non-Hague nations.</p>
+          </div>
+        </div>
+        <div class="card-back">
+          <h4>Adoption from Non-Hague Nations</h4>
+          <p>This paper reviews Indian judicial trends on international adoption, procedural gaps, and risks of exploitation, with global comparisons.</p>
+          <p><strong>Tags:</strong> Family law, CARA, Hague Convention</p>
+          <a href="https://drive.google.com/file/d/1kERU55cYtbM9QX59T8dGK0vVEdat3Jps/view?usp=drive_link" target="_blank">Read PDF</a>
+        </div>
+      </div>
+    </div>
 
-.buttons a:hover {
-  background-color: #b00610;
-}
+    <!-- Sixth Schedule - Manipur -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="assets/sixth schedule.jpg" alt="Sixth Schedule">
+          <div class="card-body">
+            <h3>Sixth Schedule Extension</h3>
+            <p>Autonomy demands in Manipur’s hill districts.</p>
+          </div>
+        </div>
+        <div class="card-back">
+          <h4>Sixth Schedule in Manipur</h4>
+          <p>Explores governance gaps and identity politics in Manipur’s hill regions. Advocates extending Sixth Schedule for decentralised democracy.</p>
+          <p><strong>Tags:</strong> Constitutional law, federalism, tribal rights</p>
+          <a href="https://drive.google.com/file/d/15sJHHf_FkG7idghSGYz98Q55Zn9epRS9/view?usp=drive_link" target="_blank">Read PDF</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-/* Navigation */
-nav {
-  background-color: #1f1f1f;
-  padding: 0.5rem;
-  text-align: center;
-}
-
-nav a {
-  color: #ddd;
-  margin: 0 1rem;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #fff;
-}
-
-/* Research Section Layout */
-.section-title {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-.research-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
-  justify-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Cards */
-.card {
-  width: 100%;
-  max-width: 280px;
-  height: 400px;
-  perspective: 1000px;
-  cursor: pointer;
-}
-
-.card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.card.flipped .card-inner {
-  transform: rotateY(180deg);
-}
-
-.card-front,
-.card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 10px;
-  overflow: hidden;
-  background-color: #1e1e1e;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-}
-
-/* Card Front */
-.card-front img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-bottom: 2px solid #333;
-}
-
-.card-body {
-  padding: 1rem;
-}
-
-.card-body h3 {
-  color: #e50914;
-}
-
-.card-body p {
-  font-size: 0.95rem;
-  color: #ccc;
-  line-height: 1.4;
-  text-align: justify;
-}
-
-.card-body a {
-  color: #1db954;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.card-body a:hover {
-  text-decoration: underline;
-}
-
-/* Card Back */
-.card-back {
-  transform: rotateY(180deg);
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #ccc;
-}
-
-.card-back h4 {
-  color: #e50914;
-  margin-top: 0;
-}
-
-/* Footer */
-.footer {
-  text-align: center;
-  padding: 1.5rem;
-  font-size: 0.9rem;
-  color: #aaa;
-  background-color: #000;
-  margin-top: 2rem;
-}
-
-/* Responsive Fix */
-@media (max-width: 600px) {
-  .header h1 {
-    font-size: 2.2rem;
-  }
-  .header p {
-    font-size: 1rem;
-  }
-}
+  <div class="footer">
+    © 2025 Vijay Pujar. All Rights Reserved.
+  </div>
+</body>
+</html>
