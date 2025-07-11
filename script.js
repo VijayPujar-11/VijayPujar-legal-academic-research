@@ -1,4 +1,4 @@
-// Flip card effect
+// Flip card on click
 document.querySelectorAll(".card").forEach((card) => {
   card.addEventListener("click", () => {
     card.classList.toggle("flipped");
@@ -11,18 +11,16 @@ const cards = document.querySelectorAll(".card");
 
 filterButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
+    // Toggle active button
     filterButtons.forEach((b) => b.classList.remove("active"));
     btn.classList.add("active");
 
-    const tag = btn.getAttribute("data-tag");
+    const selectedTag = btn.getAttribute("data-tag").toLowerCase();
 
     cards.forEach((card) => {
-      const cardTags = card.getAttribute("data-tags");
-      if (tag === "all" || cardTags.toLowerCase().includes(tag.toLowerCase())) {
-        card.style.display = "block";
-      } else {
-        card.style.display = "none";
-      }
+      const cardTags = card.getAttribute("data-tags").toLowerCase();
+      const isVisible = selectedTag === "all" || cardTags.includes(selectedTag);
+      card.style.display = isVisible ? "block" : "none";
     });
   });
 });
