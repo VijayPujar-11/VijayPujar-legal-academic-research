@@ -14,11 +14,11 @@ filterButtons.forEach((btn) => {
     filterButtons.forEach((b) => b.classList.remove("active"));
     btn.classList.add("active");
 
-    const tag = btn.getAttribute("data-tag");
+    const tag = btn.getAttribute("data-tag").toLowerCase();
 
     cards.forEach((card) => {
-      const cardTags = card.getAttribute("data-tags");
-      if (tag === "all" || cardTags.toLowerCase().includes(tag.toLowerCase())) {
+      const cardTags = card.getAttribute("data-tags").toLowerCase();
+      if (tag === "all" || cardTags.includes(tag)) {
         card.style.display = "block";
       } else {
         card.style.display = "none";
