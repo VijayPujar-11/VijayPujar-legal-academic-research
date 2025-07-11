@@ -1,3 +1,4 @@
+/* Base */
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +7,7 @@ body {
   color: white;
 }
 
+/* Header */
 .header {
   text-align: center;
   padding: 3rem 1rem 2rem;
@@ -38,6 +40,7 @@ body {
   background-color: #b00610;
 }
 
+/* Navigation */
 nav {
   background-color: #1f1f1f;
   padding: 0.5rem;
@@ -55,17 +58,28 @@ nav a:hover {
   color: #fff;
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 2rem;
-  gap: 2rem;
+/* Research Section Layout */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
+.research-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cards */
 .card {
-  width: 280px;
-  height: 380px;
+  width: 100%;
+  max-width: 280px;
+  height: 400px;
   perspective: 1000px;
   cursor: pointer;
 }
@@ -94,10 +108,12 @@ nav a:hover {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
+/* Card Front */
 .card-front img {
   width: 100%;
   height: 180px;
   object-fit: cover;
+  border-bottom: 2px solid #333;
 }
 
 .card-body {
@@ -112,6 +128,7 @@ nav a:hover {
   font-size: 0.95rem;
   color: #ccc;
   line-height: 1.4;
+  text-align: justify;
 }
 
 .card-body a {
@@ -124,6 +141,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Card Back */
 .card-back {
   transform: rotateY(180deg);
   padding: 1rem;
@@ -138,7 +156,7 @@ nav a:hover {
   margin-top: 0;
 }
 
-
+/* Footer */
 .footer {
   text-align: center;
   padding: 1.5rem;
@@ -146,4 +164,14 @@ nav a:hover {
   color: #aaa;
   background-color: #000;
   margin-top: 2rem;
+}
+
+/* Responsive Fix */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 2.2rem;
+  }
+  .header p {
+    font-size: 1rem;
+  }
 }
