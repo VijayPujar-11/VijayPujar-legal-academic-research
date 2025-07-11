@@ -1,31 +1,29 @@
-// Flip card on click
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".card").forEach((card) => {
-    card.addEventListener("click", () => card.classList.toggle("flipped"));
+// Flip card effect
+document.querySelectorAll(".card").forEach((card) => {
+  card.addEventListener("click", () => {
+    card.classList.toggle("flipped");
   });
+});
 
-  // Filter logic
-  const filterLinks = document.querySelectorAll(".filter-bar a");
-  const cards = document.querySelectorAll(".card");
+// Filter logic
+const filterButtons = document.querySelectorAll(".filter-btn");
+const cards = document.querySelectorAll(".card");
 
-  filterLinks.forEach(link => {
-    link.addEventListener("click", function(e) {
-      e.preventDefault();
+filterButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    // Remove active from all buttons
+    filterButtons.forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
 
-      // Remove active class
-      filterLinks.forEach(l => l.classList.remove("active"));
-      this.classList.add("active");
+    const tag = btn.getAttribute("data-tag");
 
-      const filter = this.getAttribute("data-filter");
-
-      cards.forEach(card => {
-        const tags = card.getAttribute("data-tags");
-        if (filter === "all" || tags.includes(filter)) {
-          card.style.display = "flex";
-        } else {
-          card.style.display = "none";
-        }
-      });
+    cards.forEach((card) => {
+      const cardTags = card.getAttribute("data-tags");
+      if (tag === "all" || cardTags.toLowerCase().includes(tag.toLowerCase())) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
     });
   });
 });
