@@ -11,7 +11,6 @@ const cards = document.querySelectorAll(".card");
 
 filterButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
-    // Remove active from all buttons
     filterButtons.forEach((b) => b.classList.remove("active"));
     btn.classList.add("active");
 
@@ -20,7 +19,7 @@ filterButtons.forEach((btn) => {
     cards.forEach((card) => {
       const cardTags = card.getAttribute("data-tags");
       if (tag === "all" || cardTags.toLowerCase().includes(tag.toLowerCase())) {
-        card.style.display = "flex"; // ✅ updated from "block"
+        card.style.display = "block";
       } else {
         card.style.display = "none";
       }
