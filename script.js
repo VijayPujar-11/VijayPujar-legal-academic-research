@@ -26,7 +26,8 @@ window.addEventListener("DOMContentLoaded", () => {
       const tag = btn.getAttribute("data-tag").toLowerCase();
       cards.forEach(card => {
         const tags = card.getAttribute("data-tags").toLowerCase();
-        card.style.display = tag === "all" || tags.includes(tag) ? "block" : "none";
+        const visible = tag === "all" || tags.includes(tag);
+        card.style.display = visible ? "block" : "none";
       });
     });
   });
