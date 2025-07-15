@@ -301,3 +301,37 @@ body {
     padding: 0.4rem 0.8rem;
   }
 }
+/* ========================
+   About & Experience Block
+   ======================== */
+.about-experience-wrapper {
+  background: #1b1b1b;
+  padding: 3rem 1.5rem;
+  max-width: 1200px;
+  margin: 3rem auto;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(229,9,20,0.4);
+}
+.about-experience {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.about-column, .experience-column {
+  flex: 1 1 45%;
+}
+.about-column h2, .experience-column h2 {
+  color: #e50914;
+  margin-bottom: 1rem;
+}
+.about-column p, .experience-column li {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.resume-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1
+
