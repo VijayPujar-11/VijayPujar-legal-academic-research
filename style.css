@@ -357,6 +357,7 @@ body {
   color: #ccc;
   line-height: 1.6;
   margin-bottom: 1rem;
+  text-align: justify; /* ✅ This is the new line to add */
 }
 .resume-btn {
   display: inline-block;
