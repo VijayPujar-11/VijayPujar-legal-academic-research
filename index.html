@@ -253,6 +253,24 @@
   <!-- Footer -->
   <div class="footer">© 2025 Vijay Pujar. All Rights Reserved.</div>
 
+  <!-- JavaScript -->
   <script src="script.js"></script>
+
+  <!-- ✅ Theme Toggle Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggleBtn = document.getElementById("themeToggle");
+      toggleBtn?.addEventListener("click", () => {
+        document.body.classList.toggle("light-mode");
+        localStorage.setItem("theme", document.body.classList.contains("light-mode") ? "light" : "dark");
+      });
+
+      // Load saved theme
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "light") {
+        document.body.classList.add("light-mode");
+      }
+    });
+  </script>
 </body>
 </html>
