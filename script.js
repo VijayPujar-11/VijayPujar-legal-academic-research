@@ -90,22 +90,6 @@ window.addEventListener("DOMContentLoaded", () => {
       div.classList.add("animate");
     });
   });
-  addBlogBtn.addEventListener("click", () => {
-    const t = blogTitle.value.trim();
-    const c = blogContent.value.trim();
-    if (!t || !c) return;
-    const div = document.createElement("div");
-    div.className = "blog-post fade-in-up";
-    div.innerHTML = `<h3>${t}</h3><p>${c}</p>`;
-    blogList.prepend(div);
-    blogTitle.value = "";
-    blogContent.value = "";
-
-    // Animate the new post
-    requestAnimationFrame(() => {
-      div.classList.add("animate");
-    });
-  });
 
   // ✅ Animate emojis on scroll
   const emojis = document.querySelectorAll(".emoji");
@@ -113,11 +97,10 @@ window.addEventListener("DOMContentLoaded", () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("animate");
-        observer.unobserve(entry.target); // run once only
+        observer.unobserve(entry.target); // Run once only
       }
     });
   }, { threshold: 0.5 });
 
   emojis.forEach(e => observer.observe(e));
 });
-
