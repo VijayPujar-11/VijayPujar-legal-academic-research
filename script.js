@@ -120,4 +120,4 @@ window.addEventListener("DOMContentLoaded", () => {
 
   emojis.forEach(e => observer.observe(e));
 });
-});
+
