@@ -34,15 +34,17 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // Search functionality
   const searchInput = document.getElementById("searchInput");
-  searchInput.addEventListener("input", () => {
-    const q = searchInput.value.toLowerCase();
-    cards.forEach(card => {
-      const title = card.querySelector("h3").textContent.toLowerCase();
-      const tags = card.getAttribute("data-tags").toLowerCase();
-      const visible = title.includes(q) || tags.includes(q);
-      card.style.display = visible ? "block" : "none";
+  if (searchInput) {
+    searchInput.addEventListener("input", () => {
+      const q = searchInput.value.toLowerCase();
+      cards.forEach(card => {
+        const title = card.querySelector("h3").textContent.toLowerCase();
+        const tags = card.getAttribute("data-tags").toLowerCase();
+        const visible = title.includes(q) || tags.includes(q);
+        card.style.display = visible ? "block" : "none";
+      });
     });
-  });
+  }
 
   // PDF modal logic
   const modal = document.getElementById("pdfModal");
@@ -74,22 +76,24 @@ window.addEventListener("DOMContentLoaded", () => {
   const blogTitle = document.getElementById("blogTitle");
   const blogContent = document.getElementById("blogContent");
   const addBlogBtn = document.getElementById("addBlogBtn");
-  addBlogBtn.addEventListener("click", () => {
-    const t = blogTitle.value.trim();
-    const c = blogContent.value.trim();
-    if (!t || !c) return;
-    const div = document.createElement("div");
-    div.className = "blog-post fade-in-up";
-    div.innerHTML = `<h3>${t}</h3><p>${c}</p>`;
-    blogList.prepend(div);
-    blogTitle.value = "";
-    blogContent.value = "";
+  if (addBlogBtn) {
+    addBlogBtn.addEventListener("click", () => {
+      const t = blogTitle.value.trim();
+      const c = blogContent.value.trim();
+      if (!t || !c) return;
+      const div = document.createElement("div");
+      div.className = "blog-post fade-in-up";
+      div.innerHTML = `<h3>${t}</h3><p>${c}</p>`;
+      blogList.prepend(div);
+      blogTitle.value = "";
+      blogContent.value = "";
 
-    // Animate the new post
-    requestAnimationFrame(() => {
-      div.classList.add("animate");
+      // Animate the new post
+      requestAnimationFrame(() => {
+        div.classList.add("animate");
+      });
     });
-  });
+  }
 
   // ✅ Animate emojis on scroll
   const emojis = document.querySelectorAll(".emoji");
