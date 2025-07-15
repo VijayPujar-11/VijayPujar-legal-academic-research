@@ -393,38 +393,5 @@ body {
     flex: 1 1 100%;
   }
 }
-/* Publications Section */
-.publications-section {
-  background: #1c1c1c;
-  padding: 2rem 1.5rem;
-  max-width: 900px;
-  margin: 3rem auto;
-  border-radius: 16px;
-  box-shadow: 0 0 10px rgba(229,9,20,0.3);
-}
-.publications-section h2 {
-  color: #e50914;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
-}
-.publication-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-.publication-item h3 a {
-  color: #1db954;
-  font-size: 1.2rem;
-  text-decoration: none;
-}
-.publication-item h3 a:hover {
-  text-decoration: underline;
-}
-.publication-item p {
-  color: #ccc;
-  font-size: 0.95rem;
-  margin-top: 0.25rem;
-  line-height: 1.5;
-}
+
 
